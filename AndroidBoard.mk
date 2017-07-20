@@ -1,0 +1,7 @@
+ifneq ($(TARGET_BUILD_VARIANT), user)
+KERNEL_DEFCONFIG ?= s4300ae_debug_defconfig
+else
+KERNEL_DEFCONFIG ?= s4300ae_defconfig
+endif
+PRELOADER_TARGET_PRODUCT ?= s4300ae
+LK_PROJECT ?= s4300ae
